@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedruna 200 - Encuentro de Educadores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7;
+        }
+        .font-serif {
+            font-family: 'Crimson Pro', serif;
+        }
+        @media print {
+            @page {
+                margin: 1cm;
+                size: A4;
+            }
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white;
+            }
+            .letter-container {
+                box-shadow: none !important;
+                border-top: 20px solid #b45309 !important; /* Mantener borde amber-700 */
+                padding: 1cm !important;
+                margin: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+                position: static !important;
+                overflow: visible !important;
+            }
+            /* Asegurar que el texto sea legible y ocupe el ancho */
+            .letter-container > div {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
